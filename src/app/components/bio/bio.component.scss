@@ -45,25 +45,16 @@
       h1 {
         color: $text;
       }
-      .buttons {
-        display: flex;
-        align-items: center;
-        a button {
-          padding: 0.6rem 1rem;
-          cursor: pointer;
-          border-radius: 0.4rem;
-        }
-        button.menu-toggler {
-          margin: 0 0.2rem;
-          padding: 0rem 1rem;
-          cursor: pointer;
-          background-color: transparent;
-          border: none;
-          color: $text;
-          display: none;
-          transition: 0.3s;
-          font-size: 1.8rem;
-        }
+      button.menu-toggler {
+        margin: 0 0.2rem;
+        padding: 0rem 1rem;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        color: $text;
+        display: none;
+        transition: 0.3s;
+        font-size: 1.8rem;
       }
     }
     .description {
@@ -160,18 +151,9 @@
       h1 {
         color: $text;
       }
-      .buttons {
-        display: flex;
-        align-items: center;
-        a button {
-          padding: 0.6rem 1rem;
-          cursor: pointer;
-          border-radius: 0.4rem;
-        }
-        button.menu-toggler {
-          display: block !important;
-          transition: 0.3s;
-        }
+      button.menu-toggler {
+        display: block !important;
+        transition: 0.3s;
       }
     }
   }
@@ -186,7 +168,6 @@
   .head {
     display: flex;
     padding: 0 1rem 0 0;
-    flex-direction: column-reverse !important;
     .buttons {
       display: flex;
       justify-content: space-between;

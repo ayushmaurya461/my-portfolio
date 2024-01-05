@@ -116,7 +116,9 @@
       }
     }
     .head {
+      padding: 2rem 2.8rem 2rem 1rem !important;
       flex-direction: column;
+      row-gap: 1rem;
     }
     .projects {
       .card {

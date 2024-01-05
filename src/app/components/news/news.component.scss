@@ -15,6 +15,9 @@
       padding: 2rem 2rem 2rem 3rem;
       display: flex;
       justify-content: space-between;
+      button.pi.pi-bars {
+        display: none;
+      }
       h1 {
         color: $text;
       }
@@ -23,12 +26,14 @@
           display: flex;
           column-gap: 1rem;
           button {
-            padding: 0.5rem 1rem;
+            padding: 0.6rem 0.7rem;
             border-radius: 0.4rem;
+            cursor: pointer;
           }
           input {
             padding: 0.1rem 0.5rem;
             height: 2rem;
+            flex: 2;
             outline: none;
             border: none;
             border-radius: 0.4rem;
@@ -107,6 +112,30 @@
         -webkit-line-clamp: 4; /* Number of lines to show */
         -webkit-box-orient: vertical;
         overflow: hidden;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    padding: 1rem;
+    .head {
+      flex-direction: column;
+      row-gap: 1rem;
+      padding: 2.5rem 1rem !important;
+      position: relative;
+      button.pi.pi-bars {
+        position: absolute;
+        right: 1rem;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        display: block !important;
+        color: #dedede;
+        font-size: 1.8rem !important;
+        top: 2.8rem;
+        cursor: pointer;
       }
     }
   }

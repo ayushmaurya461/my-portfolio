@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
+import { SidebarService } from '../../services/sidebar.service';
 
 @Component({
   selector: 'app-news',
@@ -9,14 +10,19 @@ import { Router } from '@angular/router';
   styleUrl: './news.component.scss',
 })
 export class NewsComponent {
-  constructor(private router: Router) {}
+  router = inject(Router);
+  sidebar = inject(SidebarService);
 
   onSearchSubmit(event: any) {
     event?.preventDefault();
-    console.log('Hi');
   }
 
   loadFullBlog() {
     this.router.navigate(['/full-blog']);
+  }
+
+  toggleSidebar() {
+    this.sidebar.toggleEnable = true;
+    this.sidebar.showSidebar();
   }
 }

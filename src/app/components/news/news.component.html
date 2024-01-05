@@ -5,9 +5,10 @@
       <div class="search">
         <form (submit)="onSearchSubmit($event)">
           <input type="text" name="search-text" id="search-text" />
-          <button>Search</button>
+          <button class="pi pi-search"></button>
         </form>
       </div>
+      <button class="pi pi-bars" (click)="toggleSidebar()"></button>
     </div>
     <div class="description">
       <p>

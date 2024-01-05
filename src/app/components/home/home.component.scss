@@ -43,25 +43,17 @@
       h1 {
         color: $text;
       }
-      .buttons {
-        display: flex;
-        align-items: center;
-        a button {
-          padding: 0.6rem 1rem;
-          cursor: pointer;
-          border-radius: 0.4rem;
-        }
-        button.menu-toggler {
-          margin: 0 0.2rem;
-          padding: 0rem 1rem;
-          cursor: pointer;
-          background-color: transparent;
-          border: none;
-          color: $text;
-          display: none;
-          transition: 0.3s;
-          font-size: 1.8rem;
-        }
+
+      button.menu-toggler {
+        margin: 0 0.2rem;
+        padding: 0rem 1rem;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        color: $text;
+        display: none;
+        transition: 0.3s;
+        font-size: 1.8rem;
       }
     }
     .description {
@@ -231,24 +223,13 @@
     .head {
       padding: 2rem 2rem 2rem 3rem;
       display: flex;
-      flex-direction: column-reverse;
       justify-content: space-between;
       h1 {
         color: $text;
       }
-      .buttons {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        a button {
-          padding: 0.6rem 1rem;
-          cursor: pointer;
-          border-radius: 0.4rem;
-        }
-        button.menu-toggler {
-          display: block !important;
-          transition: 0.3s;
-        }
+      button.menu-toggler {
+        display: block !important;
+        transition: 0.3s;
       }
     }
     .description {
