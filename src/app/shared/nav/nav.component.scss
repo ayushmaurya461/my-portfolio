@@ -12,7 +12,9 @@ nav {
     right: 0;
     top: 0;
     color: $text;
+    cursor: pointer;
     border: none;
+    display: none;
     background-color: transparent;
   }
   .navs,
@@ -65,5 +67,11 @@ nav {
     color: $text;
     text-align: center;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  nav button {
+    display: block !important;
   }
 }

@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { SidebarService } from '../../services/sidebar.service';
 
 @Component({
   selector: 'app-bio',
@@ -9,6 +10,8 @@ import { Component } from '@angular/core';
   styleUrl: './bio.component.scss',
 })
 export class BioComponent {
+  sidebar = inject(SidebarService);
+
   expperience = [
     {
       company: 'Kataria Software Solutions Pvt. Ltd., Gurgugram. ',
@@ -52,4 +55,9 @@ export class BioComponent {
       description: '',
     },
   ];
+
+  showSidebar() {
+    this.sidebar.toggleEnable = true;
+    this.sidebar.showSidebar();
+  }
 }

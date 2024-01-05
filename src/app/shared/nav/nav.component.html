@@ -1,9 +1,10 @@
 <nav>
-  <button class="pi pi-chevron-right"></button>
+  <button class="pi pi-chevron-right" (click)="hideSidebar()"></button>
   <h2>Ayush Maurya</h2>
   <div class="navs">
     <ul>
       <li
+        (click)="sidebar.hideSidebar()"
         *ngFor="let item of nav"
         routerLink="{{ item.url }}"
         routerLinkActive="router-link-active"

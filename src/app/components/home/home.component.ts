@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { expandCollapse } from '../../shared/animations/animations';
 import { RouterModule } from '@angular/router';
+import { SidebarService } from '../../services/sidebar.service';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +13,10 @@ import { RouterModule } from '@angular/router';
   animations: [expandCollapse],
 })
 export class HomeComponent {
+  sidebar = inject(SidebarService);
+
   showDetails = false;
+
   selected = {
     title: '',
     description: '',
@@ -95,5 +99,10 @@ export class HomeComponent {
   setSelected(tech: any, selected: any) {
     this.showDetails = true;
     this.selected = selected;
+  }
+
+  showSidebar() {
+    this.sidebar.toggleEnable = true;
+    this.sidebar.showSidebar();
   }
 }

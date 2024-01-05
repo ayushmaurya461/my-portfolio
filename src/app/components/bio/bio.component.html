@@ -2,7 +2,18 @@
   <div class="intro">
     <div class="head">
       <h1>WHO AM I ?</h1>
-      <button>Download Resume <i class="pi pi-download"></i></button>
+      <div class="buttons">
+        <a
+          href="assets/resume/Ayush_Maurya_Resume.pdf"
+          download="Resume_Ayush_Maurya.pdf"
+        >
+          <button>Download Resume <i class="pi pi-download"></i></button>
+        </a>
+        <button
+          class="menu-toggler pi pi-bars"
+          (click)="showSidebar()"
+        ></button>
+      </div>
     </div>
     <div class="description">
       <div class="image">

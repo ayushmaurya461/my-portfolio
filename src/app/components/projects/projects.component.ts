@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { SidebarService } from '../../services/sidebar.service';
 
 @Component({
   selector: 'app-projects',
@@ -9,6 +10,8 @@ import { Component } from '@angular/core';
   styleUrl: './projects.component.scss',
 })
 export class ProjectsComponent {
+  sidebar = inject(SidebarService);
+
   projects = [
     {
       name: 'TMSERP',
@@ -164,4 +167,9 @@ export class ProjectsComponent {
       },
     },
   ];
+
+  showSidebar() {
+    this.sidebar.toggleEnable = true;
+    this.sidebar.showSidebar();
+  }
 }

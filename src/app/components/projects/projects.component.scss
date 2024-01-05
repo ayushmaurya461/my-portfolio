@@ -3,13 +3,24 @@
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
-
   .intro {
     width: 100%;
     min-height: fit-content;
     height: fit-content;
     border-radius: 0.5rem;
+    position: relative;
     background: rgba(15, 15, 15, 0.493);
+    button.menu-toggler {
+      position: absolute;
+      right: 1rem;
+      top: 2.5rem;
+      background-color: transparent;
+      color: #dadada;
+      outline: none;
+      border: none;
+      display: none;
+      font-size: 1.6rem;
+    }
     .head {
       padding: 2rem 1rem 2rem 3rem;
       display: flex;
@@ -20,7 +31,7 @@
       button {
         padding: 0.4rem 2rem;
         border-radius: 0.4rem;
-        background-color: orange;
+        background-color: #dadada;
         cursor: pointer;
       }
     }
@@ -89,6 +100,37 @@
           border-radius: 0.4rem;
           padding: 0.4rem 1rem;
           cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .home {
+    padding: 0;
+    .intro {
+      button.menu-toggler {
+        display: block !important;
+        cursor: pointer;
+      }
+    }
+    .head {
+      flex-direction: column;
+    }
+    .projects {
+      .card {
+        flex-direction: column;
+        row-gap: 1.5rem;
+        .image {
+          height: 6rem;
+          min-width: 6rem;
+        }
+        .description {
+          p {
+            padding: 0;
+            max-width: none;
+          }
         }
       }
     }

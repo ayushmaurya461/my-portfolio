@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { SidebarService } from '../../services/sidebar.service';
 
 @Component({
   selector: 'app-nav',
@@ -10,6 +11,8 @@ import { RouterModule } from '@angular/router';
   styleUrl: './nav.component.scss',
 })
 export class NavComponent {
+  sidebar = inject(SidebarService);
+
   nav = [
     {
       icon: 'pi pi-home',
@@ -60,4 +63,8 @@ export class NavComponent {
       icon: 'pi pi-code',
     },
   ];
+
+  hideSidebar() {
+    this.sidebar.hideSidebar();
+  }
 }
