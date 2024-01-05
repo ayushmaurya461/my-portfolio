@@ -1,0 +1,74 @@
+<div class="home">
+  <div class="intro">
+    <div class="head">
+      <h1>Welcome!</h1>
+      <a
+        href="assets/resume/Ayush_Maurya_Resume.pdf"
+        download="Resume_Ayush_Maurya.pdf"
+      >
+        <button>Download Resume <i class="pi pi-download"></i></button>
+      </a>
+    </div>
+    <div class="description">
+      <div class="image">
+        <img [src]="'assets/profile/profile.jpeg'" alt="" />
+      </div>
+      <div class="text">
+        <h4>I'm Ayush Maurya</h4>
+        <p>
+          Passionate Website Developer from Gurugram, India, crafting seamless
+          and dynamic web experiences.
+        </p>
+        <p>
+          Specializing in diverse website types, my years of expertise bring
+          innovation to every project.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="headers">
+    <h4>Projects</h4>
+    <button routerLink="/projects">More ></button>
+  </div>
+  <div class="projects">
+    <div class="card" *ngFor="let item of projects">
+      <div class="image">
+        <a href="{{ item.url }}" target="_blank">
+          <img src="{{ item.image }}" alt="" />
+        </a>
+      </div>
+      <div class="details">
+        <div class="title">Title : {{ item.title }}</div>
+        <div class="technologies">Technologies : {{ item.technologies }}</div>
+      </div>
+      <!-- <button class="github" title="Github">
+        <i class="pi pi-github"></i>
+      </button> -->
+    </div>
+  </div>
+  <div class="headers">
+    <h4>What I Know</h4>
+    <button>More ></button>
+  </div>
+  <div class="wik">
+    <div class="tech">
+      <ng-container *ngFor="let tech of technologies">
+        <div class="card">
+          <h5>{{ tech.title }}</h5>
+          <div class="stack">
+            <p *ngFor="let s of tech.stack" (click)="setSelected(tech, s)">
+              {{ s.title }}
+            </p>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+    <div class="detail" *ngIf="showDetails" [@expandCollapse]>
+      <button class="close" (click)="showDetails = false">
+        <i class="pi pi-times"></i>
+      </button>
+      <div class="title">Title : {{ selected.title }}</div>
+      <div class="description">Description : {{ selected.description }}</div>
+    </div>
+  </div>
+</div>

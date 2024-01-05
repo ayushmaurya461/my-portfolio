@@ -1,0 +1,96 @@
+.home {
+  padding: 0 3rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+
+  .intro {
+    width: 100%;
+    min-height: fit-content;
+    height: fit-content;
+    border-radius: 0.5rem;
+    background: rgba(15, 15, 15, 0.493);
+    .head {
+      padding: 2rem 1rem 2rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      h1 {
+        color: #dadada;
+      }
+      button {
+        padding: 0.4rem 2rem;
+        border-radius: 0.4rem;
+        background-color: orange;
+        cursor: pointer;
+      }
+    }
+    .description {
+      padding: 0 2rem 2rem 3rem;
+      p {
+        color: #dadada;
+      }
+    }
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    width: calc(100% - 2rem);
+    .card {
+      width: 100%;
+      border: 1px solid #00000079;
+      background: rgba(15, 15, 15, 0.493);
+      padding: 1rem;
+      display: flex;
+      min-height: fit-content;
+      column-gap: 2rem;
+      position: relative;
+      border-radius: 0.4rem;
+      .image {
+        height: 4rem;
+        min-width: 4rem;
+        max-width: 4rem;
+        border: 1px solid #dadada2f;
+        border-radius: 0.4rem;
+        img {
+          height: 100%;
+          width: 100%;
+          border-radius: 0.4rem;
+          object-fit: cover;
+        }
+      }
+      .description {
+        display: flex;
+        flex-direction: column;
+        h4 {
+          font-size: 1.3rem;
+          color: #dadada;
+        }
+        p {
+          color: #dadada;
+          font-size: 0.8rem;
+          margin-bottom: 0.6rem;
+          max-width: calc(100% - 5rem);
+        }
+        ul {
+          list-style-type: none;
+          li {
+            color: #dadada;
+            margin-bottom: 1rem;
+            font-size: 0.8rem;
+          }
+        }
+      }
+      a {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        button {
+          border-radius: 0.4rem;
+          padding: 0.4rem 1rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

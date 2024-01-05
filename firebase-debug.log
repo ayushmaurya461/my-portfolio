@@ -1,0 +1,64 @@
+[debug] [2024-01-05T13:53:27.165Z] ----------------------------------------------------------------------
+[debug] [2024-01-05T13:53:27.166Z] Command:       /usr/bin/node /usr/bin/firebase init
+[debug] [2024-01-05T13:53:27.166Z] CLI Version:   13.0.2
+[debug] [2024-01-05T13:53:27.167Z] Platform:      linux
+[debug] [2024-01-05T13:53:27.167Z] Node Version:  v18.17.1
+[debug] [2024-01-05T13:53:27.167Z] Time:          Fri Jan 05 2024 19:23:27 GMT+0530 (India Standard Time)
+[debug] [2024-01-05T13:53:27.167Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-05T13:53:27.171Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-05T13:53:27.171Z] > authorizing via signed-in user (ayushmaurya461.work@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/ayush/itsayush/itsayush
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-01-05T13:54:14.272Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-01-05T13:54:14.979Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-01-05T13:54:14.979Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project itsayush461 (itsayush) 
+[info] 
+=== Hosting Setup
+[debug] [2024-01-05T13:54:19.263Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/itsayush461 [none]
+[debug] [2024-01-05T13:54:22.674Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/itsayush461 200
+[debug] [2024-01-05T13:54:22.675Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/itsayush461 {"projectId":"itsayush461","projectNumber":"97261361681","displayName":"itsayush","name":"projects/itsayush461","resources":{"hostingSite":"itsayush461"},"state":"ACTIVE","etag":"1_8c737d93-2ea7-48ab-ac1a-8b08d77aeb13"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-01-05T13:56:28.479Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-01-05T13:56:28.581Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-01-05T13:56:28.581Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.7.1","browserURL":"https://www.gstatic.com/firebasejs/10.7.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.7.1/firebase.tgz"},"live":{"version":"10.7","browserURL":"https://www.gstatic.com/firebasejs/live/10.7/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.7/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.7.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.7.1/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.7.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.7.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.7.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.7.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.memory.js"}}
+[info] ✔  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at /home/ayush/itsayush/itsayush 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=862394684&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-01-05T13:56:49.215Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-01-05T13:56:49.215Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-01-05T13:56:50.636Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-01-05T13:56:50.636Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-01-05T13:56:50.644Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-01-05T13:56:51.037Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-01-05T13:56:51.037Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"ayushmaurya461","id":77280809,"node_id":"MDQ6VXNlcjc3MjgwODA5","avatar_url":"https://avatars.githubusercontent.com/u/77280809?v=4","gravatar_id":"","url":"https://api.github.com/users/ayushmaurya461","html_url":"https://github.com/ayushmaurya461","followers_url":"https://api.github.com/users/ayushmaurya461/followers","following_url":"https://api.github.com/users/ayushmaurya461/following{/other_user}","gists_url":"https://api.github.com/users/ayushmaurya461/gists{/gist_id}","starred_url":"https://api.github.com/users/ayushmaurya461/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ayushmaurya461/subscriptions","organizations_url":"https://api.github.com/users/ayushmaurya461/orgs","repos_url":"https://api.github.com/users/ayushmaurya461/repos","events_url":"https://api.github.com/users/ayushmaurya461/events{/privacy}","received_events_url":"https://api.github.com/users/ayushmaurya461/received_events","type":"User","site_admin":false,"name":"Ayush Maurya","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":15,"public_gists":0,"followers":2,"following":0,"created_at":"2021-01-11T13:32:24Z","updated_at":"2023-12-14T09:51:57Z","private_gists":0,"total_private_repos":7,"owned_private_repos":7,"disk_usage":132882,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as ayushmaurya461 
+[info] 

@@ -1,0 +1,57 @@
+<div class="home">
+  <div class="intro">
+    <div class="head">
+      <h1>News & Tips</h1>
+      <div class="search">
+        <form (submit)="onSearchSubmit($event)">
+          <input type="text" name="search-text" id="search-text" />
+          <button>Search</button>
+        </form>
+      </div>
+    </div>
+    <div class="description">
+      <p>
+        Here, you'll find a collection of news and tips curated from my ongoing
+        exploration of cutting-edge technologies and innovative approaches.
+      </p>
+      <p>
+        Join me in unraveling the threads of knowledge, as we navigate the
+        dynamic landscape of web development together.
+      </p>
+      <p>
+        Dive into a wealth of information, learn with me, and stay tuned for the
+        exciting developments on this insightful journey!
+      </p>
+    </div>
+  </div>
+  <div class="blogs">
+    <div class="card">
+      <div class="image">
+        <img src="assets/js.png" alt="" />
+      </div>
+      <div class="header">Javascript Closures</div>
+      <div class="description">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
+        distinctio blanditiis nemo corrupti, nisi, ratione ab velit odio dolore
+        accusamus aperiam ipsa dolores reiciendis voluptatum doloribus molestias
+        eveniet architecto aliquid et quos. Sunt numquam quas, aperiam aliquid
+        est qui inventore doloribus laudantium ducimus ea dolor vel optio
+        possimus? Soluta repellat saepe officia vitae? Impedit tenetur placeat
+        soluta ab nesciunt dolorum sapiente ipsum dignissimos in voluptates
+        repellendus excepturi deleniti eligendi sequi, sed fugit dolore illo
+        adipisci ad harum. Sequi laudantium illo facilis debitis, veritatis
+        dolorem laboriosam perferendis ipsam eaque porro vero animi obcaecati
+        natus ab. Optio blanditiis tenetur in officiis repudiandae.
+      </div>
+      <button (click)="loadFullBlog()">Read More ></button>
+    </div>
+    <div class="card">
+      <div class="image">
+        <img src="assets/js.png" alt="" />
+      </div>
+      <div class="header"></div>
+      <div class="description"></div>
+      <button (click)="loadFullBlog()">Read More ></button>
+    </div>
+  </div>
+</div>

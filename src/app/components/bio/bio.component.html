@@ -1,0 +1,87 @@
+<div class="bio">
+  <div class="intro">
+    <div class="head">
+      <h1>WHO AM I ?</h1>
+      <button>Download Resume <i class="pi pi-download"></i></button>
+    </div>
+    <div class="description">
+      <div class="image">
+        <img [src]="'assets/profile/profile.jpeg'" alt="" />
+      </div>
+      <div class="text">
+        <p>
+          Embarking on my JavaScript journey from the vibrant city of
+          Yamunanagar to the dynamic tech hub of Gurugram, I bring over two
+          years of industry wisdom as an experienced JavaScript Developer. My
+          code tells stories—from the elegant dance of Angular to the rapid pace
+          of Express and the lively rhythm of React. I've woven applications,
+          threading through the language's basics to the intricate tapestries of
+          Angular and React. My quest led me through the startup hustle and the
+          corporate corridors of TCS.
+        </p>
+        <p>Join me in the ever-evolving saga of tech innovation!</p>
+      </div>
+    </div>
+  </div>
+  <div class="headers">
+    <h4>Experience</h4>
+  </div>
+  <div class="experience">
+    <div class="timeline" *ngFor="let exp of expperience">
+      <div class="circle"></div>
+      <div class="contents">
+        <h3>{{ exp.role }}</h3>
+        <p>
+          <i>{{ exp.company }}</i>
+        </p>
+        <p>{{ exp.start }}</p>
+        <p>{{ exp.duration }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="headers">
+    <h4>Education</h4>
+  </div>
+  <div class="education">
+    <div class="timeline" *ngFor="let exp of education">
+      <div class="circle"></div>
+      <div class="contents">
+        <h3>{{ exp.course }}</h3>
+        <p>{{ exp.specialization }}</p>
+        <p>
+          <i>{{ exp.college }}</i>
+        </p>
+        <p>{{ exp.start }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="headers">
+    <h4>Journey</h4>
+  </div>
+  <div class="journey">
+    <p>
+      Once upon a time, I discovered my love for coding and the limitless
+      possibilities it held. The deeper I delved, the more apparent it became
+      that my true passion lay in tackling complex challenges that pushed me to
+      the edge.
+    </p>
+    <p>
+      My journey officially began at Tata Consultancy Services, where I
+      fine-tuned my skills in Angular, Typescript and HTML, working in an Agile
+      environment. Collaborating with teammates, I developed the confidence to
+      venture into new horizons.
+    </p>
+    <p>
+      Now, at Kataria Software Solutions, I've embraced the role of a full-stack
+      developer with proficiency in a range of technologies, from Angular and
+      React to Express, SQL, and MongoDB. I thrive in fast-paced environments,
+      relishing every challenge as an opportunity to unite with my team and
+      craft innovative solutions.
+    </p>
+    <p>
+      My expertise knows no boundaries, allowing me to adapt to a wide range of
+      technologies. Let's connect and embark on an exciting journey of
+      exploration and innovation together.!
+    </p>
+  </div>
+</div>

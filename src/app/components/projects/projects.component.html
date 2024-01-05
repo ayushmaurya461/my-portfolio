@@ -1,0 +1,30 @@
+<div class="home">
+  <div class="intro">
+    <div class="head">
+      <h1>Projects, I've Worked On.</h1>
+      <button>Contact Me</button>
+    </div>
+  </div>
+  <div class="projects">
+    <div class="card" *ngFor="let project of projects">
+      <div class="image">
+        <img src="{{ project.img }}" alt="" />
+      </div>
+      <div class="description">
+        <h4>{{ project.name }}</h4>
+        <p>{{ project.tech }}</p>
+        <div class="des">
+          <p>{{ project.description.brief }}</p>
+          <ul>
+            <li *ngFor="let ac of project.description.achievements">
+              &#11088; {{ ac }}
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="{{ project.url }}" target="_blank">
+        <button>Show</button>
+      </a>
+    </div>
+  </div>
+</div>

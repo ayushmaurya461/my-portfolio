@@ -1,0 +1,69 @@
+@import "../../../theme.scss";
+nav {
+  position: relative;
+  height: 100%;
+  h2 {
+    color: $text;
+    text-align: center;
+    padding: 3rem 0;
+  }
+  button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: $text;
+    border: none;
+    background-color: transparent;
+  }
+  .navs,
+  .socials {
+    height: fit-content;
+    display: flex;
+    padding: 2rem 1.3rem;
+    flex-direction: column;
+    h4 {
+      color: $text;
+      margin: 1.5rem 0;
+    }
+    ul {
+      list-style-type: none;
+      li {
+        a {
+          color: $text;
+          margin: 1rem 0;
+          display: flex;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+      li:hover p {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.navs {
+  ul {
+    list-style-type: none;
+    li {
+      color: $text;
+      margin: 1rem 0;
+      display: flex;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    li:hover p {
+      text-decoration: underline;
+    }
+  }
+}
+.copyright {
+  position: absolute;
+  bottom: 3rem;
+  width: 100%;
+  p {
+    color: $text;
+    text-align: center;
+    width: 100%;
+  }
+}

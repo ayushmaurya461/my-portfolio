@@ -1,0 +1,37 @@
+<nav>
+  <button class="pi pi-chevron-right"></button>
+  <h2>Ayush Maurya</h2>
+  <div class="navs">
+    <ul>
+      <li
+        *ngFor="let item of nav"
+        routerLink="{{ item.url }}"
+        routerLinkActive="router-link-active"
+      >
+        <i [style.color]="'#dcdcdc'" class="{{ item.icon }}"></i>&nbsp; &nbsp;
+        <p>{{ item.text | titlecase }}</p>
+      </li>
+      <li>
+        <i [style.color]="'#dcdcdc'" class="pi pi-share-alt"></i>&nbsp; &nbsp;
+        <p>Share My Profile</p>
+      </li>
+    </ul>
+  </div>
+  <div class="socials">
+    <h4>Socials</h4>
+    <ul>
+      <li *ngFor="let item of socials">
+        <a href="{{ item.link }}" target="_blank">
+          <i [style.color]="item.color" class="{{ item.icon }}"></i>&nbsp;
+          &nbsp;
+          <p>
+            {{ item.name | titlecase }}
+          </p>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="copyright">
+    <p>&#9400; Ayush Maurya</p>
+  </div>
+</nav>
