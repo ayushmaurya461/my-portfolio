@@ -13,7 +13,7 @@ import { NavComponent } from './shared/nav/nav.component';
 import { isPlatformBrowser } from '@angular/common';
 import { PLATFORM_ID } from '@angular/core';
 import { SidebarService } from './services/sidebar.service';
-
+import { DOCUMENT } from '@angular/common';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -41,7 +41,10 @@ export class AppComponent implements AfterViewInit {
   private renderer = inject(Renderer2);
 
   content: any;
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: Object,
+    @Inject(DOCUMENT) private document: Document
+  ) {}
 
   ngAfterViewInit() {
     if (isPlatformBrowser(this.platformId)) {
@@ -49,7 +52,7 @@ export class AppComponent implements AfterViewInit {
     }
     this.sidebar.sidebar.subscribe({
       next: (res) => {
-        const sidebar = document.querySelector('.sidebar');
+        const sidebar = this.document.querySelector('.sidebar') as HTMLElement;
         if (this.sidebar.toggleEnable)
           if (res) {
             if (sidebar) {
