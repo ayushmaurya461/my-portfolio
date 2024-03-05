@@ -24,11 +24,11 @@ export class NavComponent {
       url: 'who-am-i',
       text: 'Who Am I',
     },
-    {
-      icon: 'pi pi-bolt',
-      url: 'news-&-tips',
-      text: 'News & Tips',
-    },
+    // {
+    //   icon: 'pi pi-bolt',
+    //   url: 'news-&-tips',
+    //   text: 'News & Tips',
+    // },
   ];
 
   socials = [
